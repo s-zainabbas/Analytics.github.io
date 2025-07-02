@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden fixed top-4 left-4 z-50">
+        <button id="menuToggle" class="p-2 rounded-md bg-indigo-600 text-white shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar w-64 bg-white shadow-lg md:shadow-none md:transform-none md:relative">
+        <!-- Sidebar content remains the same -->
+        <!-- ... -->
+    </div>
+    
+    <!-- Overlay for mobile sidebar -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="md:ml-64 min-h-screen">
+        <!-- Header and main content remains the same -->
+        <!-- ... -->
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip hidden"></div>
+</body>
+</html>
